@@ -15,7 +15,7 @@
 
        77    END-OF-SESSION-SWITCH   PIC X VALUE "N".
        77    SALES-AMOUNT            PIC 9(5)V99.
-       77    SALES-TAX               PIC Z,ZZZ.99.
+       77    SALES-TAX               PIC ZZZZ.99.
       ************************************************************************
        PROCEDURE DIVISION.
 

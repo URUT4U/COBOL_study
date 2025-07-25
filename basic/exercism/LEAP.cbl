@@ -23,15 +23,28 @@
       ************************************************************************
        PROCEDURE DIVISION.
 
+       MAIN.
+           DISPLAY "-----------------------".
+           DISPLAY "ENTER A YEAR (XXXX): ".
+           ACCEPT WS-YEAR.
+           PERFORM LEAP.
+           IF WS-RESULT = 0
+               DISPLAY "IT ISN'T A LEAP YEAR."
+           ELSE
+               DISPLAY "IT'S LEAP YEAR."
+           END-IF.
+           DISPLAY "-----------------------".
+           STOP RUN.
+
+
        LEAP.
            IF FUNCTION MOD(WS-YEAR, 400) = 0
                MOVE 1 TO WS-RESULT
-               STOP RUN
+               EXIT PARAGRAPH
            END-IF.
            IF FUNCTION MOD(WS-YEAR, 4) = 0
                IF FUNCTION MOD(WS-YEAR, 100) = 0
-                   STOP RUN
+                   EXIT PARAGRAPH
                MOVE 1 TO WS-RESULT
-               STOP RUN
+               EXIT PARAGRAPH
            END-IF.
-           STOP RUN.

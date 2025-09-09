@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+PROVA em COBOL Online que você deseja pode ser estruturado da seguinte forma. 
+O código recebe três campos de entrada: nome, CPF e data de nascimento. 
+Dependendo do ano de nascimento, ele imprime informações diferentes.
+IDENTIFICATION DIVISION: Nome do programa.
+ 
+DATA DIVISION: Declaração das variáveis.
+Nome para armazenar o nome do usuário.
+CPF para armazenar o CPF do usuário.
+DataNascimento para armazenar a data de nascimento.
+AnoNascimento para armazenar o ano extraído da data de nascimento.
+DataCompleta para armazenar a data fixa "01.01.2000".
+ 
+PROCEDURE DIVISION:
+Recebe os dados do usuário e os armazena.
+Extrai o ano da data de nascimento.
+Usa uma estrutura condicional IF para verificar (se) o ano é menor que 2000 Imprime dados de entrada ou não e imprime os dados conforme as condições especificadas.
+ 
+---------------------------------------------------------------------------------
+PROVA COBOL em modo batch que recebe três campos de entrada (nome, CPF e data de nascimento) e executa a lógica que você especificou.
+ 
+Este programa irá:
+Ler os dados de um arquivo de entrada.
+Verificar o ano de nascimento.
+Imprimir as informações de acordo com as condições.
+ 
+IDENTIFICATION DIVISION: Nome do programa.
+ENVIRONMENT DIVISION: Define o arquivo de entrada que será lido (input.txt).
+DATA DIVISION:
+FILE SECTION: 
+Define registros do arquivo de entrada.
+WORKING-STORAGE SECTION: 
+Declara variáveis para armazenar o ano da data de nascimento e uma data fixa.
+ 
+PROCEDURE DIVISION:
+Abre o arquivo de entrada.
+Lê os registros até o final do arquivo (EOF).
+Extrai o ano da data de nascimento.
+Usa uma estrutura condicional IF para definir o que imprimir com base no ano.
+Fecha o arquivo antes de encerrar o programa.

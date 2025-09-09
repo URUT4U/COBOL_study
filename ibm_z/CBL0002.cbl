@@ -2,7 +2,7 @@
        IDENTIFICATION DIVISION.
       *-----------------------
        PROGRAM-ID.    CBL0002.
-       AUTHOR.        Otto B. Fun.
+       AUTHOR.        Nathan Ranna
       *--------------------
        ENVIRONMENT DIVISION.
       *--------------------

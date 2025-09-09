@@ -1,2 +1,2 @@
 # COBOL_study
-Collection of my COBOL studies
+Collection of my COBOL studies, yet unfinished.
